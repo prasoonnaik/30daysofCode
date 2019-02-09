@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    
+    int numberOfTestCases;
+    cin >> numberOfTestCases;
+
+    for (int i = 0; i < numberOfTestCases; ++i)
+    {
+        string input;
+        cin >> input;
+
+        for (int i = 0; i < input.length(); ++i)
+        {
+            if(i % 2 == 0){
+                cout << input[i];
+            }
+        }
+
+        cout << " ";
+
+        for (int i = 0; i < input.length(); ++i)
+        {
+            if(i % 2 != 0){
+                cout << input[i];
+            }
+        }
+
+        cout << endl;
+    }  
+    
+    return 0;
+}
